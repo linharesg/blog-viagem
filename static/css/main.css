@@ -1,23 +1,38 @@
-/* nav, main {
-    display: inline-block
-} */
+html {
+    display: flex;
+    justify-content: center;
+    background-color:bisque;
+}
+
 body {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
+
 }
 .nav-main {
     display: flex;
+    margin: 0;
 
 }
-h1 p {
+header, header img {
     margin: 0;
+    padding: 0;
 }
+
+header img {
+    display: block;
+}
+
 nav {
     width:  250px;
     border: 1px solid black;
     min-width: 250px;
-    /* height: 1000px; */
 }
+
+h1 p {
+    margin: 0;
+}
+
 
 main {
     width: 1090px;
