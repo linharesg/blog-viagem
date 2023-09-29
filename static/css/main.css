@@ -1,0 +1,26 @@
+/* nav, main {
+    display: inline-block
+} */
+body {
+    margin: 0;
+    /* padding: 0; */
+}
+.nav-main {
+    display: flex;
+
+}
+h1 p {
+    margin: 0;
+}
+nav {
+    width:  250px;
+    border: 1px solid black;
+    min-width: 250px;
+    /* height: 1000px; */
+}
+
+main {
+    width: 1090px;
+    border: 2px solid red;
+    height: 1000px;
+}
