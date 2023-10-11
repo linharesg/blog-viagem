@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@400;700&display=swap');
 
 html {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +15,7 @@ body {
     margin: 2.5em 1em;
 }
 
-header img, .wraper {
+header img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -23,6 +25,10 @@ header img, .wraper {
     background-color: rgba(255, 255, 255, 0.985);
     align-items: center;
     margin: 1em auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 
@@ -31,6 +37,10 @@ header img, .wraper {
     display: block;
 }
 
+nav {
+    position: sticky;
+
+}
 
 .links-nav {
     width: 100%;
@@ -49,9 +59,9 @@ header img, .wraper {
 .links-nav li {
 
     width: 100px;
-    padding: 1px;
+    padding: 4px 1px;
     list-style-type: none;
-    border-right: 2px solid rgb(255, 255, 255);
+    /* border-right: 2px solid rgb(255, 255, 255); */
 }
 
 .links-nav li:hover {
@@ -69,8 +79,13 @@ header img, .wraper {
     color: rgb(82, 82, 82);
 }
 
+.main__container {
+    text-align: justify;
+}
 
-.last-trips ul {
+
+.last-trips ul,
+.next-trips ul {
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -84,15 +99,25 @@ header img, .wraper {
 
 }
 
-.last-trips ul img {
+.last-trips ul img,
+.next-trips ul img {
     border: 3px solid rgb(199, 111, 2);
     border-style: solid;
     border-radius: 20px;
+    width: 220px;
 }
 
 .container-header {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: flex-end;
+    /* position: relative; */
+    /* display: inline-block; */
+    height: 230px;
+    background-image: url(../img/header-345.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container-trips {
@@ -106,7 +131,7 @@ header img, .wraper {
 }
 
 .header-text {
-    position: absolute;
+    /* position: absolute; */
     font-size: 3em;
     color: rgb(237, 198, 98);
     font-weight: 900;
@@ -115,17 +140,17 @@ header img, .wraper {
     margin: 0px 0px 10px 0px;
     width: 100%;
     text-align: center;
-    bottom: 5px;
+    /* bottom: 5px; */
 
 }
 
 
 .label-last-trips {
     position: absolute;
-    font-size: 50px;
+    font-size: 1.9em;
     color: rgb(237, 198, 98);
     font-weight: 900;
-    -webkit-text-stroke: 2px;
+    -webkit-text-stroke: 0.06em;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.678);
     text-align: right;
     line-height: 40px;
@@ -134,13 +159,76 @@ header img, .wraper {
     bottom: 5px;
 }
 
-#texte {
-    background-color: aqua;
-    font-size: 32px;
-    -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: antiquewhite;
-    font-weight: 800
+
+footer p a {
+    display: flex;
+    font-size: 11px;
+    text-decoration: none;
+    justify-content: center;
+    color: rgb(101, 101, 101);
 }
 
+.trip-photos {
+    padding: 5px;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@400;700&display=swap');
+.trip-photos ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.trip-photos ul li {
+    width: 100%;
+}
+
+/* Quando for no desktop, tirar o width: 100% (acima de 700px)*/
+@media screen and (min-width: 700px) {
+    .trip-photos ul li {
+        max-width: 300px;
+    }
+}
+
+.trip-photos ul img {
+    width: 100%;
+    display: block;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.trip-photos ul li {
+    list-style-type: none;
+}
+
+.trip-photos ul {
+    padding: 0;
+}
+
+.desc-wraper {
+    margin: 0;
+    /* height: 50px; */
+    /* height: 100%; */
+    background-color: rgb(127, 127, 127);
+    color: rgb(238, 238, 238);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.desc-wraper p:hover, .desc-wraper p:active {
+    white-space: unset;
+}
+
+.desc-wraper p:disabled {
+    white-space: nowrap;
+}
+
+.desc-wraper p {
+    margin: 0;
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
