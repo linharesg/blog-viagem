@@ -246,3 +246,49 @@ footer div.contact label {
     white-space: nowrap;
 }
 
+footer {
+    margin: 0;
+}
+
+.contact p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    
+}
+.contact input, .contact textarea {
+    display: flex;
+    justify-content: center;
+    /* color: red; */
+    width: 300px;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.social li {
+    display: inline-block;
+    /* padding-right: .65em; */
+    
+}
+
+.social-icon {
+    text-decoration: none;
+    /* border: 2px solid rgb(131, 131, 131);
+    border-radius: 100%; */
+    color: rgb(82, 82, 82);
+}
+
+.social-icon::before {
+    display: block;
+    font-size: 1.25rem;
+    width: 1.5em;
+    height: 1.5em;
+    /* text-align: center; */
+    /* line-height: 1.5em; */
+}

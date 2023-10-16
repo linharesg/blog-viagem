@@ -20,10 +20,10 @@
             </div>
             <nav class="main-nav">
                 <ul class="links-nav">
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Viagens Realizadas</a></li>
-                    <li><a href="#">Próximas viagens</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#intro">Sobre o blog</a></li>
+                    <li><a href="#last-trips">Viagens Realizadas</a></li>
+                    <li><a href="#next-trips">Próximas viagens</a></li>
+                    <li><a href="#contact">Contato</a></li>
                     <!-- <li><a href="#">Parceiros</a></li> -->
                 </ul>
             </nav>
@@ -31,7 +31,7 @@
 
 
         <main class="main__container">
-            <section class="intro">
+            <section class="intro" id="intro">
 
                 <p>
                     Bem-vindo(a) ao Linhares Tour, sua porta de entrada para um mundo repleto de descobertas e
@@ -73,7 +73,7 @@
                 </p>
             </section>
             <div>
-                <section class="last-trips">
+                <section class="last-trips" id="last-trips">
                     <h2>Confira tudo sobre minhas últimas viagens!</h2>
                     <ul>
                         <li>
@@ -117,7 +117,7 @@
                     </ul>
                 </section>
 
-                <section class="next-trips">
+                <section class="next-trips" id="next-trips">
                     <h2>Minhas próximas viagens</h2>
                     <ul>
                         <li>
@@ -153,31 +153,32 @@
     </div>
     <footer>
         <p><a href="#">Voltar ao início</a></p>
-        <div class="contact">
+        <div class="contact" id="contact">
             <p>Entre em contato</p>
             <form>
-                <label>Nome: <input type="text" name="name" id="contact-name" placeholder="Digite seu nome"></label>
+                <label><input type="text" name="name" id="contact-name" placeholder="Digite seu nome"></label>
 
-                <label>E-mail: <input type="email" name="email" id="contact-email"
-                        placeholder="exemplo@email.com"></label>
+                <label><input type="email" name="email" id="contact-email"
+                        placeholder="Digite seu e-mail"></label>
 
-                <label>Assunto: <input type="text" name="subject" id="contact-subject"
+                <label><input type="text" name="subject" id="contact-subject"
                         placeholder="Informe o assunto"></label>
 
                 <label><textarea class="contact-message" name="contact-message" id="contact-message" cols="30" rows="10"
                         placeholder="Digite aqui a sua mensagem"></textarea></label>
+                <input type="submit" value="Enviar">
 
             </form>
         </div>
         <div class="social">
             <ul>
-                <li><a href="https://github.com/linharesg" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://github.com/linharesg" target="_blank"><i class="fa-brands fa-github social-icon"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/gslinhares/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://airbnb.com.br/h/casa-penha" target="_blank"><i class="fa-brands fa-airbnb"></i></a>
+                            class="fa-brands fa-linkedin social-icon"></i></a></li>
+                <li><a href="https://airbnb.com.br/h/casa-penha" target="_blank"><i class="fa-brands fa-airbnb social-icon"></i></a>
                 </li>
-                <li><a href="https://www.instagram.com/gslinhares/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/gslinhares/" target="_blank social-icon"><i
+                            class="fa-brands fa-instagram social-icon"></i></a></li>
             </ul>
         </div>
     </footer>
