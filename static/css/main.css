@@ -181,7 +181,7 @@ footer div.contact label {
     width: 30%;
 }
 
-.trip-photos {
+/* .trip-photos {
     padding: 5px;
 }
 
@@ -197,7 +197,7 @@ footer div.contact label {
     width: 100%;
 }
 
-/* Quando for no desktop, tirar o width: 100% (acima de 700px)*/
+Quando for no desktop, tirar o width: 100% (acima de 700px)
 @media screen and (min-width: 700px) {
     .trip-photos ul li {
         max-width: 300px;
@@ -217,12 +217,11 @@ footer div.contact label {
 
 .trip-photos ul {
     padding: 0;
-}
+} */
 
-.desc-wraper {
+/* .desc-wraper {
     margin: 0;
-    /* height: 50px; */
-    /* height: 100%; */
+
     background-color: rgb(127, 127, 127);
     color: rgb(238, 238, 238);
     border-bottom-left-radius: 5px;
@@ -244,5 +243,66 @@ footer div.contact label {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+} */
+
+
+* { margin: 0; padding: 0; }
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
 }
 
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
