@@ -8,15 +8,15 @@
     <link rel="shortcut icon" href="static/img/favicon.jpg">
     <link rel="stylesheet" href="static/css/normalize.css">
     <link rel="stylesheet" href="static/css/main.css">
-
+    <script src="https://kit.fontawesome.com/d35f4111bc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="wraper">
         <header class="main__header">
             <div class="container-header">
-                <img class="header-img" src="static/img/header-345.jpg" alt="">
-                <h1 class="header-text" >Linhares Tour</h1>
+                <!-- <img class="header-img" src="static/img/header-345.jpg" alt=""> -->
+                <h1 class="header-text">Linhares Tour</h1>
             </div>
             <nav class="main-nav">
                 <ul class="links-nav">
@@ -146,13 +146,40 @@
                         </li>
                     </ul>
                 </section>
-                
+
             </div>
         </main>
 
     </div>
     <footer>
         <p><a href="#">Voltar ao início</a></p>
+        <div class="contact">
+            <p>Entre em contato</p>
+            <form>
+                <label>Nome: <input type="text" name="name" id="contact-name" placeholder="Digite seu nome"></label>
+
+                <label>E-mail: <input type="email" name="email" id="contact-email"
+                        placeholder="exemplo@email.com"></label>
+
+                <label>Assunto: <input type="text" name="subject" id="contact-subject"
+                        placeholder="Informe o assunto"></label>
+
+                <label><textarea class="contact-message" name="contact-message" id="contact-message" cols="30" rows="10"
+                        placeholder="Digite aqui a sua mensagem"></textarea></label>
+
+            </form>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="https://github.com/linharesg" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/gslinhares/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://airbnb.com.br/h/casa-penha" target="_blank"><i class="fa-brands fa-airbnb"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/gslinhares/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 

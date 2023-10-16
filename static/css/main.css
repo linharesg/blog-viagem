@@ -159,13 +159,26 @@ nav {
     bottom: 5px;
 }
 
-
-footer p a {
+footer p a{
     display: flex;
-    font-size: 11px;
     text-decoration: none;
-    justify-content: center;
     color: rgb(101, 101, 101);
+    justify-content: center;
+}
+
+
+footer{
+    color: rgb(101, 101, 101);
+    font-size: 11px;
+}
+
+
+footer div.contact label {
+    display: block;
+}
+
+.contact-message {
+    width: 30%;
 }
 
 .trip-photos {
@@ -232,3 +245,4 @@ footer p a {
     overflow: hidden;
     white-space: nowrap;
 }
+
