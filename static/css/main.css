@@ -384,6 +384,10 @@ footer {
         height: 100px;
         margin-left: 1rem;
     }
+    .comment-form input {
+        width: 60px;
+        margin-left: 1rem;
+    }
 }
 
 .hide-reply:checked + label {
@@ -400,6 +404,15 @@ footer {
 
 .reply:first-child {
     margin-top: 5px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+.comment-form input {
+    width: 60px;
+    /* margin-left: 1rem; */
 }
 
 
