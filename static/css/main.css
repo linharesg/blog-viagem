@@ -259,7 +259,6 @@ footer {
 .contact input, .contact textarea {
     display: flex;
     justify-content: center;
-    /* color: red; */
     width: 300px;
     padding: 5px;
     margin: 5px auto;
@@ -273,14 +272,12 @@ footer {
 }
 .social li {
     display: inline-block;
-    /* padding-right: .65em; */
     
 }
 
 .social-icon {
     text-decoration: none;
-    /* border: 2px solid rgb(131, 131, 131);
-    border-radius: 100%; */
+
     color: rgb(82, 82, 82);
 }
 
@@ -289,8 +286,7 @@ footer {
     font-size: 1.25rem;
     width: 1.5em;
     height: 1.5em;
-    /* text-align: center; */
-    /* line-height: 1.5em; */
+
 }
 
 .comments {
@@ -323,6 +319,28 @@ footer {
 
 .comment-text p {
     margin: 0 0 .5rem 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    
+}
+
+.comment-text p:focus, .comment-text p:active {
+    margin: 0 0 .5rem 0;
+    display: unset;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: initial;
+    max-height: unset;
+    height: fit-content;
+}
+
+.comment-text p:disabled {
+    margin: 0 0 .5rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 /* Oculta os checkboxes */
