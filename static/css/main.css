@@ -295,10 +295,8 @@ footer {
 
 .comments {
     background-color: rgb(224, 224, 224);
-
     align-items: center;
     margin: 0;
-    /* width: 100%; */
     width: fit-content;
     padding: 10px;
     border-top-right-radius: 1.25rem;
@@ -319,39 +317,72 @@ footer {
     font-size: .8rem;
 }
 
-
-
-#reply-btn {
-    opacity: 0;
-    margin: 12px 0px;
+.comment-text {
+    margin: 0px 1rem;
 }
 
-#comment-area {
+.comment-text p {
+    margin: 0 0 .5rem 0;
+}
+
+/* Oculta os checkboxes */
+.hide-reply {
     display: none;
 }
-.comment-reply {
-    width: 80%;
-    height: 100px;
-    margin-left: 1rem;
-}
 
-/* Estiliza o rótulo do checkbox para se parecer com um botão */
-#reply-btn:checked + label {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Quando o checkbox está marcado, mostra a div */
-#reply-btn:checked ~ #comment-area {
-    display: block;
-}
-
-/* Estiliza o botão */
-.reply-btn {
+/* Estiliza os rótulos para se parecerem com botões */
+.show-reply {
     cursor: pointer;
-    padding: 3px 10px;
+    padding: 0.15rem .5rem;
     background-color: #008CBA;
     color: white;
     border: none;
     border-radius: 5px;
+    margin: 1rem;
+    font-size: .8rem;
+    
 }
+
+/* Quando o rótulo é clicado, altera o estilo da div correspondente */
+.hide-reply:checked + .show-reply + .comment-area {
+    display: block;
+}
+
+/* Oculta as divs inicialmente */
+.comment-area {
+    display: none;
+    margin: 15px 0px;
+}
+
+.comment-reply {
+    width: 93%;
+    height: 100px;
+    /* margin: 0 1rem; */
+}
+
+@media screen and (min-width: 700px) {
+    .comment-reply {
+        width: 50%;
+        height: 100px;
+        margin-left: 1rem;
+    }
+}
+
+.hide-reply:checked + label {
+    background-color: #4CAF50;
+    color: white;
+    margin: 1rem;
+}
+
+.reply {
+    /* margin-top: 5px; */
+    margin-left: 40px;
+    border-left: 1px solid rgb(116, 116, 116);
+}
+
+.reply:first-child {
+    margin-top: 5px;
+}
+
+
+
