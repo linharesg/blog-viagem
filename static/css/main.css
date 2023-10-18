@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: rgb(239, 217, 156);
+    background-color: rgb(230, 215, 175);
 }
 
 .main__container {
@@ -52,7 +52,6 @@ nav {
     background-color: rgb(233, 233, 233);
     padding: 0;
     margin: 0;
-
 
 }
 
@@ -118,6 +117,8 @@ nav {
     background-position: center center;
     padding: 20px;
     box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .container-trips {
@@ -310,7 +311,8 @@ footer {
 }
 
 .comment-date {
-    font-size: .8rem;
+    font-size: 0.8rem;
+
 }
 
 .comment-text {
@@ -341,6 +343,7 @@ footer {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+
 }
 
 /* Oculta os checkboxes */
@@ -357,7 +360,7 @@ footer {
     border: none;
     border-radius: 5px;
     margin: 1rem;
-    font-size: .8rem;
+    font-size: .7rem;
     
 }
 
@@ -416,4 +419,16 @@ footer {
 }
 
 
+.comment-box {
+    width: 100%;
+    font-size: 13px;
+}
 
+.comment-reply {
+    font-size: 12px;
+}
+
+.your-comment {
+    margin-top: 40px;
+    margin-bottom: ;
+}
