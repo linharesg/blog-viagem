@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linhares turismo</title>
+    <link rel="shortcut icon" href="static/img/favicon.jpg">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <script src="https://kit.fontawesome.com/d35f4111bc.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <div class="wraper">
+        <header class="main__header">
+            <div class="container-header">
+                <!-- <img class="header-img" src="static/img/header-345.jpg" alt=""> -->
+                <h1 class="header-text">Linhares Tour</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="links-nav">
+                    <li><a href="#intro">Sobre o blog</a></li>
+                    <li><a href="#last-trips">Viagens Realizadas</a></li>
+                    <li><a href="#next-trips">Próximas viagens</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <!-- <li><a href="#">Parceiros</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+
+        <main class="main__container">
+            <section class="intro" id="intro">
+
+                <p>
+                    Bem-vindo(a) ao Linhares Tour, sua porta de entrada para um mundo repleto de descobertas e
+                    aventuras! Aqui, embarcaremos juntos em uma jornada extraordinária pelos destinos mais
+                    fascinantes
+                    do planeta. Se você é um amante da exploração, da diversidade cultural e de paisagens
+                    deslumbrantes,
+                    está no lugar certo.
+                </p>
+                <p>
+                    Meu nome é Gabriel, e sou apaixonado por viagens. Este blog é mais do que um diário
+                    pessoal; é
+                    um convite para compartilhar experiências, curiosidades e memórias de lugares que já tive a
+                    sorte de
+                    explorar, assim como aqueles que estão no horizonte das próximas aventuras.
+                </p>
+                <p>
+                    Ao longo das páginas deste blog, você encontrará relatos detalhados sobre os destinos
+                    que
+                    moldaram minha visão de mundo, desde as ruas movimentadas de metrópoles até as
+                    paisagens
+                    serenas e intocadas de locais remotos.
+                </p>
+                <p>
+                    Aqui, a jornada não é apenas sobre os destinos, mas sobre as histórias que eles contam e as
+                    conexões
+                    que estabelecemos com o mundo ao nosso redor. Então, pegue sua mochila e junte-se a mim
+                    neste percurso. A próxima grande aventura está prestes a começar, e estou
+                    empolgado
+                    em compartilhá-la com você. Bon voyage!
+                </p>
+            </section>
+            <div>
+                <section class="last-trips" id="last-trips">
+                    <h2>Confira tudo sobre minhas últimas viagens!</h2>
+                    <ul>
+                        <li>
+                            <a href="rio.html">
+                                <div class="container-trips">
+                                    <img class="last-trips" src="static/img/escadaria-rioe1.jpeg" alt="">
+                                    <label class="label-last-trips" for="last-trips-1">Rio</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="breve.html">
+                                <div class="container-trips">
+                                    <img class="last-trips" src="static/img/penha.jpeg" alt="">
+                                    <label class="label-last-trips" for="last-trips-1">Penha</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="breve.html">
+                                <div class="container-trips">
+                                    <img class="last-trips" src="static/img/ribeirao1.jpg" alt="">
+                                    <label class="label-last-trips" for="last-trips-1">Ribeirão preto</label>
+                                </div>
+                            </a>
+                        </li>
+
+
+
+                        <!-- <li><a href="teste.html"><img src="static/img/escadaria-rioe1.jpeg" alt=""></a></li>
+                                <li><a href="teste.html"><img src="static/img/escadaria-rioe1.jpeg" alt=""></a></li>
+                                <li><a href="teste.html"><img src="static/img/escadaria-rioe1.jpeg" alt=""></a></li>
+                                <li><a href="teste.html"><img src="static/img/escadaria-rioe1.jpeg" alt=""></a></li>
+                                <li><a href="teste.html"><img src="static/img/escadaria-rioe1.jpeg" alt=""></a></li> -->
+                    </ul>
+                </section>
+
+                <section class="next-trips" id="next-trips">
+                    <h2>Minhas próximas viagens</h2>
+                    <ul>
+                        <li>
+                            <a href="breve.html">
+                                <div class="container-trips">
+                                    <img class="last-trips" src="static/img/milan.jpeg" alt="">
+                                    <label class="label-last-trips" for="last-trips-1">Milão</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="breve.html">
+                                <div class="container-trips">
+                                    <img class="last-trips" src="static/img/rome.jpeg" alt="">
+                                    <label class="label-last-trips" for="last-trips-1">Roma</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="breve.html">
+                                <div class="container-trips">
+                                    <img class="last-trips" src="static/img/florence.jpg" alt="">
+                                    <label class="label-last-trips" for="last-trips-1">Florença</label>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+        </main>
+
+    </div>
+    <footer>
+        <p><a href="#">Voltar ao início</a></p>
+        <div class="contact" id="contact">
+            <p>Entre em contato</p>
+            <form>
+                <label><input type="text" name="name" id="contact-name" placeholder="Digite seu nome"></label>
+
+                <label><input type="email" name="email" id="contact-email"
+                        placeholder="Digite seu e-mail"></label>
+
+                <label><input type="text" name="subject" id="contact-subject"
+                        placeholder="Informe o assunto"></label>
+
+                <label><textarea class="contact-message" name="contact-message" id="contact-message" cols="30" rows="10"
+                        placeholder="Digite aqui a sua mensagem"></textarea></label>
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="https://github.com/linharesg" target="_blank"><i class="fa-brands fa-github social-icon"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/gslinhares/" target="_blank"><i
+                            class="fa-brands fa-linkedin social-icon"></i></a></li>
+                <li><a href="https://airbnb.com.br/h/casa-penha" target="_blank"><i class="fa-brands fa-airbnb social-icon"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/gslinhares/" target="_blank social-icon"><i
+                            class="fa-brands fa-instagram social-icon"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
